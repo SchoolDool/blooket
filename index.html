@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blooket Help Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>Blooket Help</h1>
+        <p>Need support? Browse quick answers or contact us directly.</p>
+      </header>
+
+      <section class="help-menu" aria-labelledby="help-title">
+        <div class="help-menu__header">
+          <h2 id="help-title">How can we help?</h2>
+          <input
+            id="search"
+            type="search"
+            placeholder="Search help topics..."
+            aria-label="Search help topics"
+          />
+        </div>
+
+        <div class="help-menu__content">
+          <nav class="help-menu__nav" aria-label="Help categories">
+            <button class="tab active" data-target="getting-started">Getting Started</button>
+            <button class="tab" data-target="hosting">Hosting Games</button>
+            <button class="tab" data-target="accounts">Accounts & Billing</button>
+            <button class="tab" data-target="classroom">Classroom Tips</button>
+          </nav>
+
+          <section class="help-menu__panel" aria-live="polite">
+            <article class="topic" data-category="getting-started">
+              <h3>How do I create my first set?</h3>
+              <p>Go to <strong>Create</strong>, pick a set title, add questions, and publish when ready.</p>
+            </article>
+            <article class="topic" data-category="getting-started">
+              <h3>Can I import Quizlet sets?</h3>
+              <p>Yes. Use the import option in <strong>Create</strong>, then review and save.</p>
+            </article>
+
+            <article class="topic hidden" data-category="hosting">
+              <h3>How do I host a live game?</h3>
+              <p>Select a set and choose <strong>Host</strong>. Share the game code with players.</p>
+            </article>
+            <article class="topic hidden" data-category="hosting">
+              <h3>What game modes work best for review?</h3>
+              <p>Gold Quest and Battle Royale are great for fast-paced class review sessions.</p>
+            </article>
+
+            <article class="topic hidden" data-category="accounts">
+              <h3>How do I reset my password?</h3>
+              <p>Use the <strong>Forgot Password</strong> link on sign-in and follow the email steps.</p>
+            </article>
+            <article class="topic hidden" data-category="accounts">
+              <h3>Where can I manage subscription settings?</h3>
+              <p>Open <strong>Account Settings</strong> and navigate to the <strong>Billing</strong> section.</p>
+            </article>
+
+            <article class="topic hidden" data-category="classroom">
+              <h3>How can I keep students engaged?</h3>
+              <p>Rotate game modes, enable team play, and keep sessions short and frequent.</p>
+            </article>
+            <article class="topic hidden" data-category="classroom">
+              <h3>Can I assign homework challenges?</h3>
+              <p>Yes. Choose <strong>Assign Homework</strong> and set a due date for asynchronous play.</p>
+            </article>
+          </section>
+        </div>
+
+        <footer class="help-menu__footer">
+          <button class="cta">Contact Support</button>
+          <small>Typical response time: under 24 hours</small>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
